@@ -1,0 +1,58 @@
+.hero {
+    color: white;
+    text-align: center;
+    padding: 8em 0;
+    background-color: #18aa99;
+    background-image: radial-gradient(at 83% 27%, hsla(117, 94%, 50%, 1) 0, hsla(117, 94%, 50%, 0) 50%),
+    radial-gradient(at 61% 85%, hsla(119, 91%, 61%, 1) 0, hsla(119, 91%, 61%, 0) 50%),
+    radial-gradient(at 83% 69%, hsla(159, 93%, 70%, 1) 0, hsla(159, 93%, 70%, 0) 50%),
+    radial-gradient(at 14% 83%, hsla(191, 86%, 67%, 1) 0, hsla(191, 86%, 67%, 0) 50%);
+    // background-color: #18aa99;
+    // background-image: radial-gradient(at 29% 9%, hsla(232, 87%, 54%, 1) 0, hsla(232, 87%, 54%, 0) 50%),
+    // radial-gradient(at 69% 76%, hsla(65, 93%, 54%, 1) 0, hsla(65, 93%, 54%, 0) 50%),
+    // radial-gradient(at 40% 12%, hsla(190, 91%, 70%, 1) 0, hsla(190, 91%, 70%, 0) 50%),
+    // radial-gradient(at 19% 73%, hsla(160, 85%, 50%, 1) 0, hsla(160, 85%, 50%, 0) 50%);
+    // position: relative;
+}
+// header
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+.header__logo {
+    width: 100px;
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__description {
+  max-width: 500px;
+  text-align: left;
+    h1{
+      font-family: 'Roboto';
+        font-size: 58.3291px;
+        line-height: 61.2456px;
+        font-weight: 700;
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-size: 22px;
+    }
+}
+
+.hero__description * {
+  margin-bottom: 1rem;
+}
+
+.hero-bg {
+  background-image: url(../images/bg_wave/main_wave.png);
+  position: relative;
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
+}
