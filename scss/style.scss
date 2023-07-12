@@ -124,7 +124,8 @@
 // tv
 .tv__wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .tv__image {
@@ -132,7 +133,7 @@
 }
 
 .tv__txt {
-    width: 40%;
+    width: 50%;
 }
 
 //movies
