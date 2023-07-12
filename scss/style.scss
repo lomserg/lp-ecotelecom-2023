@@ -121,6 +121,19 @@
 .tarif__small-text {
     font-size: 14px;
 }
+// tv
+.tv__wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.tv__image {
+    width: 45%;
+}
+
+.tv__txt {
+    width: 40%;
+}
 
 //movies
 

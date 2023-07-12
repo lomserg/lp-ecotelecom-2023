@@ -227,6 +227,13 @@ header {
   background-position: center center;
 }
 
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 84%;
+}
+
 .btn-secondary, .btn-primary {
   display: inline-block;
   border-radius: 5px;
@@ -402,6 +409,19 @@ header {
 
 .tarif__small-text {
   font-size: 14px;
+}
+
+.tv__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.tv__image {
+  width: 45%;
+}
+
+.tv__txt {
+  width: 40%;
 }
 
 .movies__wrapper {
