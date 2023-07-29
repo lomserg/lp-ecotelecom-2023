@@ -24,3 +24,37 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
     });
 });
+
+
+var swiper2 = new Swiper(".swiper", {
+    loop: false,
+   grabCursor: true,
+   // cssMode: true,
+   //allowTouchMove: true,
+  //  freeMode: true,
+  noSwiping: false,
+    spaceBetween: 25,
+    breakpoints: {
+        0: {
+            slidesPerView: 1.15
+        },
+        450: {
+            slidesPerView: 1.4,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        }
+    }, 
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: false,
+    },
+   
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+})

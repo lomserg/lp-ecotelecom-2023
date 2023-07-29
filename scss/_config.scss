@@ -2,6 +2,14 @@ $main-font: Arial;
 $light-clr: #f4f4f4;
 $primary-clr: #95C540;
 $accent-clr: #ff9100;
+:root {
+ // --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --size: clamp(5rem, 1rem + 30vmin, 20rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 50s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
 
 // margin
 

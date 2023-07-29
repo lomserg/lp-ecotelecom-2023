@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/style.css">
     <script src="./index.js" defer></script>
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <section class="hero hero-bg p-relative">
-        <div class="container">
-          <header class="flex-2-col flex-sb container">
-              <div class="header__logo">
-                <img src="./images/logo.png" alt="">
+      
+          <header class="header">
+              <div class="header__content">
+                <div class="header__logo">
+                  <img src="./images/logo.png" alt="">
+                </div>
+                <a class="header__phone">+74995055557</a>
               </div>
-              <div class="header__phone">+74995055557</div>
           </header>
-        </div>
+      
 
         <div class="container hero__container">
           <div class="hero__description">
@@ -31,7 +40,98 @@
           </div>
         </div>
     </section>
-    <section class="about py-5">
+    
+    <section class="tarifs container">
+      <div class="section__head py-3 " style="text-align: center;">
+        <p class="section__subtitle">Тарифы</p>
+        <h3 class="section__title">Выберите тарифное предложение</h3>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper ">
+          <!-- first tarif -->
+          <div class="swiper-slide">
+            <div class="tarif__item">
+              <img src="./images/Intersect.png" class="tarif__bg" alt="">
+              <h4 class="tarif__name">Старт</h4>
+              <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
+              <div class="tarif__icons">
+                <div class="tarif__icon">
+                  <img src="./images/icons/internet.svg" alt="">
+                </div>
+                <div class="tarif__icon">
+                  <img src="./images/icons/internet.svg" alt="">
+                </div>
+                <div class="tarif__icon">
+                  <img src="./images/icons/internet.svg" alt="">
+                </div>
+              </div>
+              <!-- tarif spec -->
+              <div class="tarif__spec">
+                <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
+              </div>
+              <p class="tarif__description">Стартовый тариф для повседневных задач</p>
+              <a href="№" class="btn btn-secondary">Подключить</a>
+            </div>
+          </div>
+            <!-- end first tarif -->
+            <!-- second  tarif -->
+            <div class="swiper-slide">
+              <div class="tarif__item">
+                <img src="./images/Intersect.png" class="tarif__bg" alt="">
+                <h4 class="tarif__name">Старт</h4>
+                <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
+                <div class="tarif__icons">
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                </div>
+                <!-- tarif spec -->
+                <div class="tarif__spec">
+                  <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
+                </div>
+                <p class="tarif__description">Стартовый тариф для повседневных задач</p>
+                <a href="№" class="btn btn-secondary">Подключить</a>
+              </div>
+            </div>
+            <!-- second tarif end -->
+            <!-- second  tarif -->
+            <div class="swiper-slide">
+              <div class="tarif__item">
+                <img src="./images/Intersect.png" class="tarif__bg" alt="">
+                <h4 class="tarif__name">Старт</h4>
+                <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
+                <div class="tarif__icons">
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                  <div class="tarif__icon">
+                    <img src="./images/icons/internet.svg" alt="">
+                  </div>
+                </div>
+                <!-- tarif spec -->
+                <div class="tarif__spec">
+                  <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
+                </div>
+                <p class="tarif__description">Стартовый тариф для повседневных задач</p>
+                <a href="№" class="btn btn-secondary">Подключить</a>
+              </div>
+            </div>
+         
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <!-- <section class="about py-5">
       <div class="container flex-2-col">
         <div class="about__img col">
           <img src="./images/about.png" alt="">
@@ -44,7 +144,7 @@
           <p class="about_info">Оператор «Экотелеком» предоставляет услуги высокоскоростного доступа в интернет, услуги интерактивного телевидения, кабельного ТВ, телефонии, домофонии в Москве и Московской области. Вы можете подключить популярные видеосервисы и онлайн-кинотеатры (Amediateka, Start, PREMIER и more.tv), взять в аренду или купить оборудование: Wi-Fi маршрутизаторы («роутеры») и ТВ-приставки, подключить умный домофон.</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="advantages py-6">
       <div class="container">
@@ -93,89 +193,6 @@
         </div>
       </div>
     </section>
-
-    <section class="tarifs py-5">
-      <div class="section__head container" style="text-align: center;">
-        <p class="section__subtitle">Тарифы</p>
-        <h3 class="section__title">Выберите тарифное предложение</h3>
-      </div>
-      <div class="tarif__items container">
-        <!-- first tarif -->
-        <div class="tarif__item">
-          <img src="./images/Intersect.png" class="tarif__bg" alt="">
-          <h4 class="tarif__name">Старт</h4>
-          <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
-          <div class="tarif__icons">
-            <div class="tarif__icon">
-              <img src="./images/icons/internet.svg" alt="">
-            </div>
-            <div class="tarif__icon">
-              <img src="./images/icons/internet.svg" alt="">
-            </div>
-            <div class="tarif__icon">
-              <img src="./images/icons/internet.svg" alt="">
-            </div>
-          </div>
-          <!-- tarif spec -->
-          <div class="tarif__spec">
-            <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
-
-          </div>
-          <p class="tarif__description">Стартовый тариф для повседневных задач</p>
-          <a href="№" class="btn btn-secondary">Подключить</a>
-        </div>
-          <!-- end first tarif -->
- <!-- second  tarif -->
-          <div class="tarif__item">
-            <img src="./images/Intersect.png" class="tarif__bg" alt="">
-            <h4 class="tarif__name">Старт</h4>
-            <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
-            <div class="tarif__icons">
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-            </div>
-            <!-- tarif spec -->
-            <div class="tarif__spec">
-              <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
-  
-            </div>
-            <p class="tarif__description">Стартовый тариф для повседневных задач</p>
-            <a href="№" class="btn btn-secondary">Подключить</a>
-          </div>
-          <!-- second tarif end -->
-          <!-- second  tarif -->
-          <div class="tarif__item">
-            <img src="./images/Intersect.png" class="tarif__bg" alt="">
-            <h4 class="tarif__name">Старт</h4>
-            <h4 class="tarif__price">444 <span class="tarif__small-text">Р/мес</span></h4>
-            <div class="tarif__icons">
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-              <div class="tarif__icon">
-                <img src="./images/icons/internet.svg" alt="">
-              </div>
-            </div>
-            <!-- tarif spec -->
-            <div class="tarif__spec">
-              <p class="tarif__speed">100 <span class="tarif__small-text">Мбит/с</span></p>
-  
-            </div>
-            <p class="tarif__description">Стартовый тариф для повседневных задач</p>
-            <a href="№" class="btn btn-secondary">Подключить</a>
-          </div>
-      </div>
-    </section>
     <section class="tv py-6">
       <div class="container tv__wrapper">
         <div class="tv__image">
@@ -199,31 +216,73 @@
         </div>
       </div>
     </section>
-    <section class="movies">
+
+    <section class="movies py-4">
       
-      <div class="container">
+      <div class="movies__container">
+        <div class="section__head py-4 container">
+          <p class="clr-white">Онлайн-кинотеатр</p>
+          <h3 class="clr-white">Фильмы и сериалы на всех устройствах</h3>
+        </div>
         <div class="movies__wrapper p-relative">
-          <div class="movies__slider p-5">
-            <div class="movies__img">
-              <img src="./images/movies/movie1.png" alt="">
+          <div class="movies__slider">
+            
+        <div class="wrapper__slider">
+          <div class="marquee">
+            <div class="marquee__content ">
+              <img src="./images/movies/1.jpeg" alt="">
+              <img src="./images/movies/2.jpeg" alt="">
+              <img src="./images/movies/3.jpeg" alt="">
+              <img src="./images/movies/4.jpeg" alt="">
+              <img src="./images/movies/5.jpeg" alt="">
+              <img src="./images/movies/6.jpg" alt="">
+              <img src="./images/movies/7.jpg" alt="">
+              <img src="./images/movies/9.jpeg" alt="">
             </div>
-            <div class="movies__img">
-              <img src="./images/movies/movie2.png" alt="">
-            </div>
-            <div class="movies__img">
-              <img src="./images/movies/movie3.png" alt="">
-            </div>
-            <div class="movies__img">
-              <img src="./images/movies/movie4.png" alt="">
+            <div aria-hidden="true" class="marquee__content">
+              <img src="./images/movies/1.jpeg" alt="">
+              <img src="./images/movies/2.jpeg" alt="">
+              <img src="./images/movies/3.jpeg" alt="">
+              <img src="./images/movies/4.jpeg" alt="">
+              <img src="./images/movies/5.jpeg" alt="">
+              <img src="./images/movies/6.jpg" alt="">
+              <img src="./images/movies/7.jpg" alt="">
+              <img src="./images/movies/9.jpeg" alt="">
+              
             </div>
           </div>
           <div class="movies__title">
-            <h3>Вы можете подключить популярные видеосервисы и онлайн-кинотеатры (Amediateka, Start, PREMIER и more.tv).</h3>
+            <h3>Вы можете подключить популярные онлайн-кинотеатры (Amediateka, Start, PREMIER и more.tv).</h3>
           </div>
+          <div class="marquee marquee__reverse">
+              <div class="marquee__content">
+                <img src="./images/movies/1.jpeg" alt="">
+                <img src="./images/movies/2.jpeg" alt="">
+                <img src="./images/movies/3.jpeg" alt="">
+                <img src="./images/movies/4.jpeg" alt="">
+                <img src="./images/movies/5.jpeg" alt="">
+                <img src="./images/movies/6.jpg" alt="">
+                <img src="./images/movies/7.jpg" alt="">
+                <img src="./images/movies/8.jpg" alt="">
+              </div>
+              
+              <div aria-hidden="true" class="marquee__content">
+                <img src="./images/movies/1.jpeg" alt="">
+                <img src="./images/movies/2.jpeg" alt="">
+                <img src="./images/movies/3.jpeg" alt="">
+                <img src="./images/movies/4.jpeg" alt="">
+                <img src="./images/movies/5.jpeg" alt="">
+                <img src="./images/movies/6.jpg" alt="">
+                <img src="./images/movies/7.jpg" alt="">
+                <img src="./images/movies/8.jpg" alt="">
+              </div>
+            </div>
+      </div>
+          </div>
+          
         </div>
       </div>
     </section>
-
     
     <section class="faq container">
       <h2 class="section-title fs-600">Дополнительная информация:</h2>
