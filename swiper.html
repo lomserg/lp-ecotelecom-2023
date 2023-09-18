@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="assets/slider/swiper-bundle.min.css" />
     <script src="assets/slider/swiper-bundle.min.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+    ></script>
+    <script defer src="./js/channels.js"></script>
     <script src="./swiper.js" defer></script>
     <script src="./js/form.js" defer></script>
+    <script src="./js/modal.js" defer></script>
     <script src="./js/phoneinput.js" defer></script>
     <script
       type="text/javascript"
@@ -18,6 +24,37 @@
     <title>Two Swiper Sliders</title>
   </head>
   <body>
+    <section>
+      <!-- modals -->
+
+      <!-- старт+кино -->
+      <div class="bg-modal" id="pack-5b504edcb2de77e82f591f1a">
+        <div class="modal-content">
+          <div class="modal-box">
+            <button class="modal-btn">X</button>
+            <div class="channels_list"></div>
+          </div>
+        </div>
+      </div>
+      <!-- хит+тв -->
+      <div class="bg-modal" id="pack-630f5b1c944a765510046e89">
+        <div class="modal-content">
+          <div class="modal-box">
+            <button class="modal-btn">X</button>
+            <div class="channels_list"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Ультра+кино -->
+      <div class="bg-modal" id="pack-5e7b7e70acb10bd8ce882ef1">
+        <div class="modal-content">
+          <div class="modal-box">
+            <button class="modal-btn">X</button>
+            <div class="channels_list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="sllder">
       <div class="section__head" style="text-align: center">
         <p class="section__subtitle">Тарифы</p>
@@ -197,7 +234,15 @@
                     100 <span class="tarif__small-text">Мбит/с</span>
                   </p>
                   <p class="tarif__speed">
-                    122 <span class="tarif__small-text">ТВ-каналов</span>
+                    <script>
+                      idPackages.push("5b504edcb2de77e82f591f1a");
+                    </script>
+                    <a
+                      class="channels_link"
+                      data-target="#pack-xxxxx"
+                      href="#pack-5b504edcb2de77e82f591f1a"
+                      >122 <span class="tarif__small-text">ТВ-каналов</span></a
+                    >
                   </p>
                 </div>
 
@@ -233,7 +278,15 @@
                     100 <span class="tarif__small-text">Мбит/с</span>
                   </p>
                   <p class="tarif__speed">
-                    122 <span class="tarif__small-text">ТВ-каналов</span>
+                    <script>
+                      idPackages.push("5b504edcb2de77e82f591f1a");
+                    </script>
+                    <a
+                      class="channels_link"
+                      data-target="#pack-xxxxx"
+                      href="#pack-5b504edcb2de77e82f591f1a"
+                      >122 <span class="tarif__small-text">ТВ-каналов</span></a
+                    >
                   </p>
                   <p class="tarif__speed">
                     1 из 3 <span class="tarif__small-text">видеосервисов </span>
@@ -271,7 +324,15 @@
                     300 <span class="tarif__small-text">Мбит/с</span>
                   </p>
                   <p class="tarif__speed">
-                    216 <span class="tarif__small-text">ТВ-каналов</span>
+                    <script>
+                      idPackages.push("630f5b1c944a765510046e89");
+                    </script>
+                    <a
+                      class="channels_link"
+                      data-target="#pack-xxxxx"
+                      href="#pack-630f5b1c944a765510046e89"
+                      >216 <span class="tarif__small-text">ТВ-каналов</span></a
+                    >
                   </p>
                   <p class="tarif__speed">PREMIER</p>
                 </div>
@@ -307,7 +368,15 @@
                     350 <span class="tarif__small-text">Мбит/с</span>
                   </p>
                   <p class="tarif__speed">
-                    270 <span class="tarif__small-text">ТВ-каналов</span>
+                    <script>
+                      idPackages.push("5e7b7e70acb10bd8ce882ef1");
+                    </script>
+                    <a
+                      class="channels_link"
+                      data-target="#pack-xxxxx"
+                      href="#pack-5e7b7e70acb10bd8ce882ef1"
+                      >270 <span class="tarif__small-text">ТВ-каналов</span>
+                    </a>
                   </p>
                   <p class="tarif__speed">
                     2 из 4 <span class="tarif__small-text">видеосервисов </span>

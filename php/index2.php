@@ -9,7 +9,7 @@ require 'phpmailer/Exception.php';
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Initialize PHPMailer
     $mail = new PHPMailer(true);
- 
+
     try {
         // SMTP configuration
         $mail->isSMTP();

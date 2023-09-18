@@ -376,6 +376,7 @@
 .sllder {
   max-width: 1230px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 .swiper-slide {
   background: purple;
@@ -383,6 +384,7 @@
 
 .swiper__container2 {
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .swiper__container2,
@@ -406,7 +408,8 @@
 }
 
 @media (max-width: 1200px) {
-  .slider__nav {
+  .slider__nav,
+  .slider__nav2 {
     display: none;
   }
 }

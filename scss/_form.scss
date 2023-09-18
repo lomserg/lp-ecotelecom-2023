@@ -23,6 +23,9 @@
 .form {
   font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form * {
@@ -38,6 +41,7 @@
 .form__item {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form__item > * {
@@ -87,7 +91,7 @@
 }
 
 .form__error {
-  padding-top: 10px;
+  padding-top: 5px;
   color: #d50000;
   visibility: hidden;
 }
@@ -116,19 +120,110 @@
   background: #0fa942;
 }
 
-.info__toast {
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  width: 300px;
-  height: 200px;
-  color: white;
-  text-align: center;
-  z-index: 100000;
-  background-color: #14b64a;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+// .info__toast {
+//   position: absolute;
+//   top: 15px;
+//   left: 50%;
+//   width: 300px;
+//   height: 200px;
+//   color: white;
+//   text-align: center;
+//   z-index: 100000;
+//   background-color: #14b64a;
+//   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 2rem;
+// }
+.bg-modal {
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.active {
+  visibility: visible;
+}
+
+.modal-content {
+  max-width: 50ch;
+  height: 550px;
+  overflow: auto;
+  padding: 1rem;
+  background: #fff;
+  z-index: 25;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  margin-top: 2rem;
+  margin: 0 auto;
+  width: 98%;
+  height: 90%;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+.channels_link {
+  color: #fff;
+  border-bottom: dashed 1px whitesmoke;
+  text-decoration: none;
+}
+
+.channels_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.channels_list span {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.channels_list span img {
+  width: 120px;
+}
+.modal-btn-tv {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-bg-tv {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+  visibility: hidden;
+}
+.modal-btn {
+  top: -1px;
+  right: 2px;
+  background: #fff;
+  position: absolute;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
 }
